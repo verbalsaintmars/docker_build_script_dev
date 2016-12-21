@@ -1,0 +1,4 @@
+[flake8]
+# E501: exemption for long URLs
+ignore = E501
+max-line-length = 160
