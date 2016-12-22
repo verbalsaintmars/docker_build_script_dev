@@ -144,6 +144,9 @@ if __name__ == "__main__":
     for pat in PATTERN:
         poolInstall(zp, "pattern:" + pat)
 
+    poolPrintTransaction(zp)
+    commit(zp)
+
     # install packages
     for package in PACKAGES:
         poolInstall(zp, package)
